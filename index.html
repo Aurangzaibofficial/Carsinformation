@@ -6,13 +6,148 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <header>Car Information</header>
+   <style>
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #283e51, #485563);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  overflow: hidden; 
+}
+
+
+header {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 30px;
+  padding: 12px 25px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 40px 35px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(12px);
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+input[type="text"] {
+  padding: 12px 20px;
+  border: 2px solid #00c6ff;
+  border-radius: 10px;
+  font-size: 16px;
+  width: 70%;
+  outline: none;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.95);
+  color: #222;
+}
+
+input[type="text"]:focus {
+  border-color: #0072ff;
+  box-shadow: 0 0 12px rgba(0, 114, 255, 0.6);
+}
+
+
+button {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+button:hover {
+  transform: scale(1.07);
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.4);
+}
+
+/* 🚙 Car Info Box */
+#cars {
+  margin-top: 25px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px 35px;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  font-size: 18px;
+  color: #222;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  animation: fadeInUp 1s ease;
+
+  
+  min-height: 220px;  
+  max-height: 300px;
+  overflow-y: auto; 
+  position: relative;
+}
+
+
+#cars h2 {
+  color: #0072ff;
+  font-size: 26px;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+}
+
+#cars p {
+  margin: 8px 0;
+  color: #333;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+
+
+
+    </style>
      <form onsubmit="getQueryAnswer(); return false;">
         <input
         type="text"
         name="query"
         id="query"
-        placeholder="Enter your question"/>
+        placeholder="Enter car name"/>
         <button type="submit">check</button>
     </form>
 
@@ -22,4 +157,3 @@
     
 </body>
 </html>
-

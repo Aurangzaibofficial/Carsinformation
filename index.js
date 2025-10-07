@@ -9,10 +9,7 @@ async function getQueryAnswer(){
     "contents": [
       {
         "parts": [
-            {
-                text:"You are a cars dealer and know about cars, if other thing is asked said query is wrong",
-
-            },
+            
           {
             text: query,
           },
